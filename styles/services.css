@@ -1,0 +1,149 @@
+.services {
+  padding: 90px 0;
+  overflow: hidden;
+}
+
+.services__title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 32px;
+}
+
+.services__txt-wrap {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 24px;
+  padding-bottom: 158px;
+}
+
+.services__text {
+  max-width: 650x;
+  width: 100%;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.services__text:nth-child(1) {
+  position: relative;
+  max-width: 650px;
+  background: linear-gradient(272deg, #0078bc -10.07%, #21bcff 48.55%, #06f0ff 103.07%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services__text:nth-child(2) {
+  padding-top: 54px;
+  max-width: 674px;
+  position: relative;
+}
+
+.services__bg-1 {
+  position: absolute;
+  top: -47px;
+  left: -106px;
+  width: 276px;
+  height: 228px;
+  z-index: -1;
+}
+
+.services__bg-2 {
+  position: absolute;
+  top: -16px;
+  right: -35px;
+  width: 245px;
+  height: 268px;
+  z-index: -1;
+}
+
+.services__container {
+  position: relative;
+}
+
+.services__up-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  width: 56px;
+  height: 56px;
+  background: #0199c54d;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.services__up-arrow.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 1200px) {
+  .services__text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 80px 0;
+  }
+
+  .services2 {
+    padding-top: 32px;
+  }
+
+  .services__up-arrow {
+    display: none;
+  }
+
+  .services__txt-wrap {
+    padding-bottom: 90px;
+  }
+
+  .services__title {
+    font-size: 28px;
+    padding-bottom: 24px;
+  }
+  .services__txt-wrap {
+    flex-direction: column;
+  }
+  .services__text {
+    font-size: 20px;
+  }
+
+  .services__text:nth-child(2) {
+    padding-top: 0;
+    max-width: 250px;
+    margin-left: auto;
+  }
+
+  .services__text:nth-child(1) {
+    padding-top: 0;
+    max-width: 250px;
+  }
+
+  .services__bg-1 {
+    top: -60px;
+    left: -106px;
+    width: 246px;
+    height: 208px;
+  }
+
+  .services__bg-2 {
+    top: -25px;
+    right: -35px;
+    width: 215px;
+    height: 228px;
+  }
+}

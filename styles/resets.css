@@ -1,0 +1,164 @@
+:root {
+  --bg-color: white;
+  --text-logo: #000929;
+  --bg-gray: #f9fafc;
+  --text-color: #475467;
+}
+
+/* WebKit */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #1fc1ff;
+  border-radius: 10px;
+}
+
+/* Firefox */
+html {
+  scrollbar-color: #1fc1ff #1a1a1a;
+  scrollbar-width: thin;
+}
+
+body.dark {
+  --bg-color: #2d2b2b;
+  --text-logo: #fff;
+  --bg-gray: #2d2b2b;
+  --text-color: #fff;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: #110d15;
+  color: #e5e5e5;
+  width: 100%;
+  line-height: 1;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 74px;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Reset styles */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  color: #e5e5e5;
+  transition: all 0.5s ease;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  max-width: 1452px;
+  margin: 0 auto;
+  padding: 0 36px;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  color: #1fc1ff;
+  border: 1px solid #556c7c;
+  background: #303844;
+}
+
+.btn-primary {
+  color: black;
+  border-radius: 8px;
+  background: linear-gradient(272deg, #0078bc -10.07%, #21bcff 48.55%, #06f0ff 103.07%);
+  width: 220px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary {
+  border-radius: 8px;
+  width: 220px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1fc1ff;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid #1fc1ff;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover,
+.btn-primary:hover {
+  box-shadow: 0 0 10px #1fc1ff;
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}

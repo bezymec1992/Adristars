@@ -1,0 +1,196 @@
+main {
+  width: 100%;
+  /* height: 100dvh; */
+  height: 927px;
+  background-image: url('../imgs/intro.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 166px;
+}
+
+.hero__content {
+  max-width: 1075px;
+  width: 100%;
+}
+
+.hero__title {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: #e5e5e5;
+  padding-bottom: 24px;
+}
+
+.hero__text {
+  font-size: 24px;
+  line-height: 1.2;
+  color: #e5e5e5;
+  padding-bottom: 48px;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 24px;
+}
+
+.hero__cookies {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1382px;
+  width: 100%;
+  z-index: 11;
+  /* margin-top: 155px; */
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(10px);
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero__cookies-info {
+  max-width: 762px;
+  width: 100%;
+}
+
+.hero__cookies-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.hero__cookies-text {
+  line-height: 1.4;
+}
+
+.hero__cookies-link {
+  color: #1fc1ff;
+}
+
+.hero__line {
+  height: 80px;
+  width: 2px;
+  background-color: #1fc1ff;
+}
+
+.hero__cookies-btns {
+  display: flex;
+  gap: 32px;
+}
+
+.hero__cookies-btn {
+  width: 257px;
+  height: 46px;
+  transition: all 0.3s ease;
+}
+
+.hero__cookies-custom {
+  color: #1fc1ff;
+  background: transparent;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.hero__cookies-btn:hover {
+  color: #26ebf8;
+  border: 1px solid #26ebf8;
+}
+
+@media (max-width: 1400px) {
+  .hero__cookies {
+    border-radius: unset;
+    border: unset;
+  }
+}
+
+@media (max-width: 1200px) {
+  main {
+    padding-top: 120px;
+  }
+
+  .hero__title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 90px;
+    background-image: url('../imgs/intro-mob.png');
+    height: 563px;
+    padding-bottom: 48px;
+  }
+
+  .hero__title {
+    font-size: 32px;
+  }
+
+  .hero__text {
+    font-size: 18px;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero__btn {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .hero__line {
+    display: none;
+  }
+
+  .hero__cookies {
+    flex-direction: column;
+    gap: 16px;
+    left: 0;
+    transform: unset;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #202935;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__cookies {
+    gap: 32px;
+    margin-top: 12px;
+    padding: 16px;
+  }
+  .hero__cookies-btns {
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .hero__cookies-title {
+    font-size: 20px;
+    padding-bottom: 8px;
+  }
+
+  .hero__cookies-text {
+    font-size: 14px;
+  }
+
+  .hero__cookies-btn {
+    width: 100%;
+  }
+}

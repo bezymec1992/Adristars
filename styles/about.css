@@ -1,0 +1,124 @@
+.about {
+  padding-bottom: 90px;
+}
+
+.about__title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #e5e5e5;
+  padding-bottom: 16px;
+}
+
+.about__txt {
+  font-size: 24px;
+  line-height: 1.2;
+  background: linear-gradient(272deg, #0078bc -10.07%, #21bcff 48.55%, #06f0ff 103.07%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 32px;
+}
+
+.about__wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.about__card {
+  position: relative;
+  max-width: 441px;
+  width: 100%;
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(141deg, #11141f -23.96%, #101b27 104.08%);
+  overflow: hidden;
+}
+
+.about__gradient {
+  width: 484px;
+  height: 484px;
+  position: absolute;
+  right: -92px;
+  top: -351px;
+  border-radius: 484px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(22, 211, 255, 0.4) 0%,
+    rgba(22, 211, 255, 0) 100%
+  );
+}
+
+.about__card-mark {
+  display: block;
+  text-align: right;
+  color: #1aacef;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding-bottom: 16px;
+}
+
+.about__card-number {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  background: linear-gradient(272deg, #0078bc -10.07%, #21bcff 48.55%, #06f0ff 103.07%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about__card-title {
+  font-size: 24px;
+  color: #e5e5e5;
+  line-height: 1.2;
+  padding-top: 18px;
+}
+
+.about__card-txt {
+  color: #acacac;
+  line-height: 1.4;
+  padding-top: 8px;
+}
+
+@media (max-width: 1200px) {
+  .about__wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding-bottom: 80px;
+  }
+
+  .about__title {
+    font-size: 28px;
+  }
+
+  .about__txt {
+    font-size: 20px;
+  }
+
+  .about__card {
+    padding: 16px;
+  }
+
+  .about__card-mark {
+    font-size: 16px;
+  }
+
+  .about__card-number {
+    font-size: 48px;
+  }
+
+  .about__card-title {
+    font-size: 20px;
+  }
+}
