@@ -243,4 +243,8 @@
     top: 0;
     right: 0;
   }
+
+  .custom__cookies-open {
+    overflow-y: scroll;
+  }
 }
