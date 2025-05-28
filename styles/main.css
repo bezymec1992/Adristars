@@ -102,6 +102,11 @@ main {
   background: transparent;
   font-size: 16px;
   text-decoration: underline;
+  transition: all 0.3s;
+}
+
+.hero__cookies-custom:hover {
+  color: #26ebf8;
 }
 
 .hero__cookies-btn:hover {

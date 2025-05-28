@@ -109,4 +109,20 @@ document.addEventListener('DOMContentLoaded', function () {
   cookiesBtn.addEventListener('click', () => {
     cookiesSection.style.display = 'none';
   });
+
+  //cookies-custom modal
+  const cookiesCustomBtn = document.querySelector('.hero__cookies-custom');
+  const cookiesCustomClose = document.querySelector('.custom__cookies-cross');
+  const cookiesCustomModal = document.querySelector('.custom__cookies-modal');
+
+  if (cookiesCustomBtn && cookiesCustomClose && cookiesCustomModal) {
+    cookiesCustomBtn.addEventListener('click', () => {
+      cookiesCustomModal.classList.add('custom__cookies-open');
+      // document.body.style.overflow = 'hidden'; //  Заблокировать скролл
+    });
+    cookiesCustomClose.addEventListener('click', () => {
+      cookiesCustomModal.classList.remove('custom__cookies-open');
+      // document.body.style.overflow = ''; //  Вернуть скролл (или 'auto')
+    });
+  }
 });
