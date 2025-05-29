@@ -64,6 +64,7 @@
 .main__picture {
   height: 793px;
   width: 672px;
+  z-index: -1;
 }
 
 .main__picture img {
@@ -89,6 +90,7 @@
 @media (max-width: 992px) {
   .main__container {
     flex-direction: column;
+    gap: 0;
   }
 
   .main {
