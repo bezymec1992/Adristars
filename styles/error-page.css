@@ -1,0 +1,136 @@
+@import 'fonts.css';
+@import 'resets.css';
+@import 'header.css';
+@import 'footer.css';
+
+.main {
+  background-image: url('../imgs/error-bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 927px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.main__container {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.main__title {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  padding-bottom: 16px;
+}
+
+.main__txt {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  padding-bottom: 48px;
+}
+
+.main__btn-wrap {
+  display: flex;
+  gap: 26px;
+}
+
+.main__btn {
+  width: 220px;
+  height: 60px;
+}
+
+.main__btn:last-child {
+  border-radius: 8px;
+  border: 2px solid #116b90;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.main__btn:last-child:hover {
+  box-shadow: 0 0 10px #1fc1ff;
+}
+
+.main__btns-mb {
+  display: none;
+}
+
+.main__picture {
+  height: 793px;
+  width: 672px;
+}
+
+.main__picture img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1400px) {
+  .main {
+    height: unset;
+    margin-bottom: 80px;
+    padding-top: 26px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main__picture {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .main__container {
+    flex-direction: column;
+  }
+
+  .main {
+    background-image: url('../imgs/error-bg-mb.png');
+    height: unset;
+  }
+
+  .main__title {
+    font-size: 48px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    padding-top: 0;
+  }
+
+  .main__txt {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    padding-bottom: 0px;
+  }
+
+  .main__wrapper {
+    width: 100%;
+  }
+
+  .main__btn-wrap {
+    flex-direction: column;
+    width: 100%;
+  }
+  .main__btn {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .main__btns-mb {
+    display: flex;
+    gap: 8px;
+  }
+
+  .main__btns-desk {
+    display: none;
+  }
+}

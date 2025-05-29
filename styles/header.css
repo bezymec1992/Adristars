@@ -1,5 +1,6 @@
 header {
   background-color: #110d15;
+  border-bottom: 1px solid #4d4f53;
   display: flex;
   justify-content: center;
   height: 74px;

@@ -144,6 +144,7 @@
 .toggle-switch input:checked + .slider {
   background: #0f1b27;
   border: 1.5px solid #1fc1ff;
+  font-size: 16px;
 }
 
 .toggle-switch input:checked + .slider::before {
