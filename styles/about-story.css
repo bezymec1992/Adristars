@@ -1,0 +1,86 @@
+.story {
+  padding: 90px 0;
+  overflow: hidden;
+}
+.story__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.story__info {
+  max-width: 675px;
+  width: 100%;
+}
+
+.story__title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 32px;
+}
+
+.story__txt {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #acacac;
+}
+
+.story__picture {
+  max-width: 533px;
+  width: 100%;
+  height: auto;
+}
+
+.story__picture img {
+  width: 100%;
+}
+
+.story__title {
+  position: relative;
+}
+
+.story__title::before {
+  content: url('../imgs/services-bg-2.png');
+  position: absolute;
+  top: -40px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+}
+
+@media (max-width: 1200px) {
+  .story__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .story__info {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .story {
+    padding: 80px 0;
+  }
+  .story__picture {
+    max-width: 100%;
+    width: 100%;
+  }
+  .story__title {
+    font-size: 28px;
+  }
+  .story__txt {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .story__title::before {
+    top: 0;
+  }
+}

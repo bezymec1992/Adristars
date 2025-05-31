@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="styles/about-page.css" />
+  </head>
+  <body>
+    <div class="body-overlay"></div>
+    <header class="header">
+      <div class="header__container container">
+        <a href="#" class="header__logo">
+          <img src="imgs/logo.svg" alt="Logo" />
+          <span class="header__logo-txt">AdriStars</span>
+        </a>
+
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="category.html" class="header__nav-link">Services</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Domains</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Testimonials</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Careers</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">About Us</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Blog</a>
+            </li>
+          </ul>
+
+          <div class="header__buttons">
+            <button class="toggle-btn" onclick="this.classList.toggle('active')">
+              <span class="toggle-circle"></span>
+              <span class="toggle-inner">
+                <span class="toggle-text-left">Dark</span>
+                <span class="toggle-text-right">Light</span>
+              </span>
+            </button>
+            <button class="header__btn button">Call us</button>
+            <button class="header__lang-btn">EN</button>
+          </div>
+        </nav>
+
+        <button class="burger-menu" aria-label="Open navigation menu" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="hero">
+      <div class="container">
+        <nav class="hero__breadcrumbs breadcrumbs" aria-label="Breadcrumb">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="/" class="breadcrumbs__link">Home</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__separator">›</span>
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__current">About Us</span>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="hero__title">
+          Leading outsourcing and outstaffing agency connecting top talent with innovative companies
+          globally
+        </h1>
+        <p class="hero__txt">
+          Our mission is to bridge the gap between exceptional professionals and businesses seeking
+          to enhance their capabilities.
+        </p>
+        <button class="btn-primary hero__btn">Get in touch</button>
+      </div>
+    </main>
+
+    <section class="story">
+      <div class="story__container container">
+        <div class="story__info">
+          <h2 class="story__title">Our Story</h2>
+          <p class="story__txt">
+            We started as a small team with a big dream: to revolutionize how businesses access
+            talent. Born in the digital age, we saw the potential of a borderless workforce.Today,
+            we're proud to be a bridge connecting innovative companies with exceptional
+            professionals across the globe.
+          </p>
+        </div>
+        <picture class="story__picture">
+          <source media="(max-width:768px)" srcset="imgs/story-mb.png" />
+          <img src="imgs/story.png" alt="map" />
+        </picture>
+      </div>
+    </section>
+
+    <section class="value">
+      <div class="value__container container">
+        <h2 class="value__title">Our values</h2>
+        <div class="value__cards">
+          <div class="value__card">
+            <span class="value__card-gradient"></span>
+            <div class="value__card-img">
+              <img src="imgs/value1.svg" alt="value icon" />
+            </div>
+            <h3 class="value__card-title">Innovation</h3>
+            <p class="value__card-txt">
+              We embrace change and constantly seek new ways to improve and innovate. Our goal is to
+              stay ahead of the curve, delivering cutting-edge solutions for our clients.
+            </p>
+          </div>
+
+          <div class="value__card">
+            <span class="value__card-gradient"></span>
+            <div class="value__card-img">
+              <img src="imgs/value2.svg" alt="value icon" />
+            </div>
+            <h3 class="value__card-title">Integrity</h3>
+            <p class="value__card-txt">
+              Honesty and transparency are at the core of everything we do. We build trust by
+              consistently delivering on our promises.
+            </p>
+          </div>
+
+          <div class="value__card">
+            <span class="value__card-gradient"></span>
+            <div class="value__card-img">
+              <img src="imgs/value3.svg" alt="value icon" />
+            </div>
+            <h3 class="value__card-title">Collaboration</h3>
+            <p class="value__card-txt">
+              Success is achieved together. We believe in the power of teamwork, fostering open
+              communication and strong partnerships across borders.
+            </p>
+          </div>
+
+          <div class="value__card">
+            <span class="value__card-gradient"></span>
+            <div class="value__card-img">
+              <img src="imgs/value4.svg" alt="value icon" />
+            </div>
+            <h3 class="value__card-title">Excellence</h3>
+            <p class="value__card-txt">
+              We strive for the highest standards in everything we create, ensuring our clients
+              always receive the best possible solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft">
+      <div class="container soft__container">
+        <div class="soft__banner">
+          <div class="soft__info-wrap">
+            <h3 class="soft__title">
+              Stop wasting money and time trying to DIY your business software.
+            </h3>
+
+            <div class="soft__info">
+              <div class="soft__img">
+                <img src="imgs/soft1.svg" alt="soft icon" />
+              </div>
+              <p class="soft__txt">
+                Save yourself the trouble and money by letting our team provide customized,
+                effective software that promotes growth and saves you time.
+              </p>
+            </div>
+
+            <div class="soft__info">
+              <div class="soft__img">
+                <img src="imgs/soft2.svg" alt="soft icon" />
+              </div>
+              <p class="soft__txt">
+                Concentrate on your strengths, and we'll take care of the rest.
+              </p>
+            </div>
+          </div>
+          <button class="soft__btn btn-primary">Get in touch</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="team container">
+      <img class="team__bg" src="imgs/services-bg-2.png" alt="background-icon" />
+      <h2 class="team__title">Our Team</h2>
+      <p class="team__txt">
+        Meet the passionate minds driving our vision forward. Together, we turn ideas into impact.
+      </p>
+      <div class="team__wrapper">
+        <div class="team__person">
+          <div class="team__person-wrap">
+            <img class="team__photo" src="imgs/team1.png" alt="parson-img" />
+            <div class="team__name-wrap">
+              <span class="team__name">Maksym Podhornyi </span>
+              <span class="team__position"> Founder & CTO </span>
+            </div>
+          </div>
+          <p class="team__description">
+            Former co-founder of Opendoor. Early staff at Spotify and Clearbit.
+          </p>
+          <a href="#" class="team__link">
+            <img src="imgs/Linkedin.svg" alt="LinkedIn icon" />
+          </a>
+        </div>
+
+        <div class="team__person">
+          <div class="team__person-wrap">
+            <img class="team__photo" src="imgs/team1.png" alt="parson-img" />
+            <div class="team__name-wrap">
+              <span class="team__name">Maksym Podhornyi </span>
+              <span class="team__position"> Founder & CTO </span>
+            </div>
+          </div>
+          <p class="team__description">
+            Former co-founder of Opendoor. Early staff at Spotify and Clearbit.
+          </p>
+          <a href="#" class="team__link">
+            <img src="imgs/Linkedin.svg" alt="LinkedIn icon" />
+          </a>
+        </div>
+
+        <div class="team__person">
+          <div class="team__person-wrap">
+            <img class="team__photo" src="imgs/team1.png" alt="parson-img" />
+            <div class="team__name-wrap">
+              <span class="team__name">Maksym Podhornyi </span>
+              <span class="team__position"> Founder & CTO </span>
+            </div>
+          </div>
+          <p class="team__description">
+            Former co-founder of Opendoor. Early staff at Spotify and Clearbit.
+          </p>
+          <a href="#" class="team__link">
+            <img src="imgs/Linkedin.svg" alt="LinkedIn icon" />
+          </a>
+        </div>
+
+        <div class="team__person">
+          <div class="team__person-wrap">
+            <img class="team__photo" src="imgs/team1.png" alt="parson-img" />
+            <div class="team__name-wrap">
+              <span class="team__name">Maksym Podhornyi </span>
+              <span class="team__position"> Founder & CTO </span>
+            </div>
+          </div>
+          <p class="team__description">
+            Former co-founder of Opendoor. Early staff at Spotify and Clearbit.
+          </p>
+          <a href="#" class="team__link">
+            <img src="imgs/Linkedin.svg" alt="LinkedIn icon" />
+          </a>
+        </div>
+
+        <div class="team__person">
+          <div class="team__person-wrap">
+            <img class="team__photo" src="imgs/team1.png" alt="parson-img" />
+            <div class="team__name-wrap">
+              <span class="team__name">Maksym Podhornyi </span>
+              <span class="team__position"> Founder & CTO </span>
+            </div>
+          </div>
+          <p class="team__description">
+            Former co-founder of Opendoor. Early staff at Spotify and Clearbit.
+          </p>
+          <a href="#" class="team__link">
+            <img src="imgs/Linkedin.svg" alt="LinkedIn icon" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <a href="#" class="footer__logo footer__logo-mobile">
+          <img src="imgs/logo.svg" alt="logo" />
+          AdriStars
+        </a>
+        <div class="footer__wrapper">
+          <div class="footer__col col1">
+            <a href="#" class="footer__logo footer__logo-desktop">
+              <img src="imgs/logo.svg" alt="logo" />
+              AdriStars
+            </a>
+            <div class="footer__icons">
+              <a href="#" class="footer__icon-link">
+                <img src="imgs/telegram.svg" alt="telegram icon" />
+              </a>
+
+              <a href="#" class="footer__icon-link">
+                <img src="imgs/Whatsapp.svg" alt="Whatsapp icon" />
+              </a>
+
+              <a href="#" class="footer__icon-link">
+                <img src="imgs/Linkedin.svg" alt="Linkedin icon" />
+              </a>
+
+              <a href="#" class="footer__icon-link">
+                <img src="imgs/Facebook.svg" alt="Facebook icon" />
+              </a>
+              <a href="#" class="footer__icon-link">
+                <img src="imgs/dribbble.svg" alt="dribbble icon" />
+              </a>
+              <a href="#" class="footer__icon-link">
+                <img src="imgs/Behance.svg" alt="Behance icon" />
+              </a>
+            </div>
+          </div>
+          <div class="footer__col col2">
+            <h3 class="footer__title">About us</h3>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Services</a></li>
+              <li><a href="#" class="footer__link">Partners</a></li>
+              <li><a href="#" class="footer__link">Contact</a></li>
+              <li><a href="#" class="footer__link">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col col3">
+            <h3 class="footer__title">Domains</h3>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Healthtech</a></li>
+              <li><a href="#" class="footer__link">Agrotech</a></li>
+              <li><a href="#" class="footer__link">Consulting</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col col4">
+            <h3 class="footer__title">Write Us</h3>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Telegram</a></li>
+              <li><a href="#" class="footer__link">WhatsApp</a></li>
+              <li><a href="#" class="footer__link">Email</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col col5">
+            <h3 class="footer__title">Call Us</h3>
+            <ul class="footer__list">
+              <li><a href="tel:+1917256322" class="footer__link">+1 917 256 322</a></li>
+              <li><a href="tel:+1923896752" class="footer__link">+1 923 896 752</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col col6">
+            <h3 class="footer__title">Office</h3>
+            <div class="footer__address">
+              <img src="imgs/loaction.svg" alt="loaction icon" />
+              <address>2815, N Church Street, Str 5689 <br />Wilmington, USA</address>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="footer__bottom">© 2024. AdriStars company. All rights reserved.</p>
+    </footer>
+    <script src="header.js"></script>
+  </body>
+</html>
