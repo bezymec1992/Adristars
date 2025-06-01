@@ -1,0 +1,149 @@
+.cards {
+  padding: 90px 0;
+}
+
+.cards__container {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 64px;
+  column-gap: 32px;
+}
+
+.card {
+  flex: 1;
+  max-width: 675px;
+  width: 100%;
+  transition: opacity 0.3s;
+  opacity: 1;
+  border-radius: 20px;
+}
+
+.cards__container:has(.card:hover) .card {
+  opacity: 0.3;
+}
+
+.cards__container:has(.card:hover) .card:hover {
+  opacity: 1;
+}
+
+.card:hover .card__img-wrapper img {
+  transform: scale(1.1);
+}
+
+.card__img-wrapper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 32px;
+}
+
+.card__img-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.card__location {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 8px;
+  padding-bottom: 32px;
+}
+
+.card__location span {
+  color: #acacac;
+  font-size: 18px;
+}
+
+.card__skills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-bottom: 32px;
+}
+
+.card__skill {
+  border-radius: 20px;
+  padding: 8px 16px;
+  background: #262c37;
+  font-size: 14px;
+  color: #d3d3d3;
+}
+
+.card__location-img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.card__instrument {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.card__instrument img {
+  width: 48px;
+  height: 48px;
+}
+
+.card__title {
+  font-size: 24px;
+  line-height: 1.2;
+}
+@media (max-width: 1200px) {
+  .cards__container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    padding: 80px 0;
+  }
+  .card__skills > .card__skill:nth-child(n + 3) {
+    display: none;
+  }
+
+  .card__img-wrapper {
+    margin-bottom: 24px;
+    border-radius: 16px;
+  }
+
+  .card__img-wrapper img {
+    border-radius: 16px;
+  }
+
+  .card__instrument {
+    gap: 16px;
+  }
+
+  .card__instrument img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .card__title {
+    font-size: 18px;
+  }
+
+  .card__location {
+    gap: 8px;
+    padding-top: 8px;
+    padding-bottom: 24px;
+  }
+
+  .card__location-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .card__skills {
+    padding-bottom: 24px;
+  }
+}
