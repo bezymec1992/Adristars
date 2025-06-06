@@ -8,7 +8,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999; /* чтобы быть поверх других блоков */
+  z-index: 999;
 }
 
 .header__container {
@@ -183,88 +183,79 @@ header {
   border: 1px solid #26ebf8;
 }
 
-/* toggle */
-
-.toggle-btn {
-  flex-shrink: 0;
-  display: flex;
+/* toggle btn */
+.header__toggle-switch {
   position: relative;
+  display: inline-block;
+
   width: 100px;
   height: 38px;
-  background: #333;
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  color: white;
-  font-size: 16px;
-  padding: 0;
-  transition: all 0.3s ease;
-
+  border-radius: 120px;
   background:
     linear-gradient(#1e1e1e, #1e1e1e) padding-box,
-    /* фоновый цвет */ linear-gradient(90deg, #0078bc, #00cfff) border-box; /* градиент */
+    linear-gradient(90deg, #00cfff, #0078bc) border-box;
   border: 1.5px solid transparent;
+  flex-shrink: 0;
 }
 
-.toggle-inner {
+.header__toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.header__slider {
   position: absolute;
+  cursor: pointer;
+  border-radius: 120px;
+  background: transparent;
+  transition: 0.3s;
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 11px;
-  box-sizing: border-box;
-  pointer-events: none;
 }
 
-.toggle-inner span {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.toggle-circle {
+.header__slider::before {
+  content: '';
   position: absolute;
-  width: 26px;
   height: 26px;
-  background: #1fc1ff;
-  border-radius: 50%;
+  width: 26px;
   top: 4.5px;
   left: 5px;
   z-index: 100;
+  border-radius: 50%;
+
   transition: all 0.3s ease;
   background: linear-gradient(272deg, #0078bc -10.07%, #21bcff 48.55%, #06f0ff 103.07%);
 }
 
-.toggle-btn.active .toggle-circle {
-  left: 65px;
+.header__slider::after {
+  content: 'Light';
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+  font-size: 16px;
 }
 
-.toggle-btn.active {
+/* Checked styles */
+.header__toggle-switch input:checked + .header__slider {
+  font-size: 16px;
   background: white;
-  border: 2px solid #1fc1ff;
 }
 
-.toggle-text-left {
-  opacity: 0;
-  transition: opacity 0.3s ease;
+.header__toggle-switch input:checked + .header__slider::before {
+  transform: translateX(61px);
+}
+
+.header__toggle-switch input:checked + .header__slider::after {
+  content: 'Dark';
+  left: 14px;
   color: black;
-}
-
-.toggle-btn.active .toggle-text-left {
-  opacity: 1;
-}
-
-.toggle-btn:not(.active) .toggle-text-right {
-  opacity: 1;
-  position: relative;
-  left: -5px;
-  transition: all 0.3s ease;
-}
-
-.toggle-btn.active .toggle-text-right {
-  opacity: 0;
+  font-size: 16px;
 }
 
 .header__lang-btn {
@@ -377,13 +368,10 @@ header {
 
   .header__btn {
     width: 100% !important;
-
     grid-area: call;
     height: 48px;
   }
-  .toggle-btn {
-    grid-area: toggle;
-  }
+
   .header__lang-btn {
     display: block;
     background-color: transparent;

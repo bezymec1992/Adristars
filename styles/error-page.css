@@ -44,6 +44,10 @@
 .main__btn {
   width: 220px;
   height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }
 
 .main__btn:last-child {

@@ -118,11 +118,9 @@ document.addEventListener('DOMContentLoaded', function () {
   if (cookiesCustomBtn && cookiesCustomClose && cookiesCustomModal) {
     cookiesCustomBtn.addEventListener('click', () => {
       cookiesCustomModal.classList.add('custom__cookies-open');
-      // document.body.style.overflow = 'hidden'; //  Заблокировать скролл
     });
     cookiesCustomClose.addEventListener('click', () => {
       cookiesCustomModal.classList.remove('custom__cookies-open');
-      // document.body.style.overflow = ''; //  Вернуть скролл (или 'auto')
     });
   }
 });
