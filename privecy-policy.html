@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>404</title>
-    <link rel="stylesheet" href="styles/error-page.css" />
+    <title>Privacy-policy</title>
+    <link rel="stylesheet" href="styles/privecy-page.css" />
   </head>
   <body>
     <div class="body-overlay"></div>
@@ -58,28 +58,120 @@
       </div>
     </header>
 
-    <main class="main">
-      <div class="main__container container">
-        <div class="main__wrapper">
-          <h1 class="main__title">Ooops...</h1>
-          <p class="main__txt">Page Not Found</p>
-          <div class="main__btn-wrap main__btns-desk">
-            <button class="main__btn btn-primary">Go Back</button>
-            <button class="main__btn button">Contact Us</button>
+    <section class="hero">
+      <div class="hero__container container">
+        <span class="hero__gradient-left gradient"></span>
+        <span class="hero__gradient-right gradient"></span>
+        <nav class="hero__breadcrumbs breadcrumbs" aria-label="Breadcrumb">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="/" class="breadcrumbs__link">Home</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__separator">›</span>
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__current">Privacy and Cookie Policy</span>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="hero__title">Privacy and Cookie Policy</h1>
+        <p class="hero__txt">
+          We respect your privacy. This policy explains how we collect, use, and protect your
+          personal information.
+        </p>
+      </div>
+    </section>
+
+    <section class="privacy">
+      <div class="privacy__container container">
+        <nav class="privacy__nav">
+          <div class="privacy__mobile">
+            <h2>Terms of Use</h2>
+            <button class="privacy__btn-hide">-</button>
+          </div>
+
+          <ul class="privacy__list">
+            <li><a class="privacy__link" href="#terms">Terms of Use</a></li>
+            <li><a class="privacy__link" href="#info">How we use your information</a></li>
+            <li><a class="privacy__link" href="#protect">How we protect your information</a></li>
+            <li><a class="privacy__link" href="#collect">What information we collect</a></li>
+            <li><a class="privacy__link" href="#rights">Your rights</a></li>
+            <li><a class="privacy__link" href="#cookies">Cookies</a></li>
+          </ul>
+        </nav>
+        <div class="privacy__content" id="terms">
+          <h2 class="privacy__title">Terms of Use</h2>
+          <h3 class="privacy__subtitle">Adristars’s terms&conditions of use.</h3>
+
+          <div class="privacy__wrapper" id="collect">
+            <h4 class="privacy__title-small">What information we collect:</h4>
+            <ul class="privacy__items">
+              <li class="privacy__item">Name and contact details</li>
+              <li class="privacy__item">Payment information</li>
+              <li class="privacy__item">How you use our website</li>
+              <li class="privacy__item">Information you choose to share with us</li>
+            </ul>
+          </div>
+
+          <div class="privacy__wrapper" id="info">
+            <h4 class="privacy__title-small">How we use your information:</h4>
+            <ul class="privacy__items">
+              <li class="privacy__item">To provide our services</li>
+              <li class="privacy__item">To improve our website</li>
+              <li class="privacy__item">To send you updates (if you agree)</li>
+              <li class="privacy__item">To comply with laws</li>
+            </ul>
+          </div>
+
+          <div class="privacy__wrapper" id="protect">
+            <h4 class="privacy__title-small">How we protect your information:</h4>
+            <ul class="privacy__items">
+              <li class="privacy__item">We use secure systems</li>
+              <li class="privacy__item">We limit who can access your data</li>
+              <li class="privacy__item">We never sell your personal information</li>
+            </ul>
+          </div>
+
+          <div class="privacy__wrapper" id="rights">
+            <h4 class="privacy__title-small">Your rights:</h4>
+            <ul class="privacy__items">
+              <li class="privacy__item">You can ask to see what information we have about you</li>
+              <li class="privacy__item">You can ask us to correct or delete your information</li>
+              <li class="privacy__item">You can opt out of marketing communications</li>
+            </ul>
+          </div>
+
+          <div class="privacy__wrapper" id="cookies">
+            <h4 class="privacy__title-small">Cookies:</h4>
+            <p class="privacy__item privacy__item-string">
+              We use cookies to improve your experience. You can control cookie settings in your
+              browser.
+            </p>
+          </div>
+
+          <div class="privacy__wrapper">
+            <h4 class="privacy__title-small">Changes to this policy:</h4>
+            <p class="privacy__item privacy__item-string">
+              We may update this policy. Check back to see any changes.
+            </p>
+          </div>
+
+          <div class="privacy__wrapper">
+            <h4 class="privacy__title-small">Questions?</h4>
+            <p class="privacy__item privacy__item-string">
+              If you have any questions or comments regarding this Privacy Policy, please send an
+              email to <a href="mailto:privacy@ourcompany.com">privacy@ourcompany.com</a> with the
+              subject line “Privacy Policy Request”.
+            </p>
+          </div>
+
+          <div class="privacy__wrapper">
+            <p class="privacy__item privacy__item-string">Last updated 08/08/2024</p>
           </div>
         </div>
-
-        <picture class="main__picture">
-          <source media="(max-width:768px)" srcset="imgs/error-light-mb.png" />
-          <img src="imgs/error-light.png" alt="light picture" />
-        </picture>
-
-        <div class="main__btn-wrap main__btns-mb">
-          <button class="main__btn btn-primary">Go Back</button>
-          <button class="main__btn button">Contact Us</button>
-        </div>
       </div>
-    </main>
+    </section>
 
     <footer class="footer">
       <div class="footer__container container">
@@ -164,7 +256,7 @@
       </div>
       <p class="footer__bottom">© 2024. AdriStars company. All rights reserved.</p>
     </footer>
-
+    <script src="privacy.js"></script>
     <script src="header.js"></script>
   </body>
 </html>

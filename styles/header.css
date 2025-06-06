@@ -163,16 +163,19 @@ header {
 
 .header__buttons {
   display: flex;
+  align-items: center;
   gap: 24px;
 }
 
 .header__btn {
-  height: 38px;
-  width: 130px;
+  height: 46px;
+  width: max-content;
+  padding: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .header__btn:hover {
@@ -183,6 +186,7 @@ header {
 /* toggle */
 
 .toggle-btn {
+  flex-shrink: 0;
   display: flex;
   position: relative;
   width: 100px;
@@ -372,9 +376,10 @@ header {
   }
 
   .header__btn {
-    width: 100%;
+    width: 100% !important;
+
     grid-area: call;
-    height: 60px;
+    height: 48px;
   }
   .toggle-btn {
     grid-area: toggle;
