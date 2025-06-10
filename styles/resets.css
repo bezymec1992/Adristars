@@ -116,6 +116,7 @@ ul li {
   color: #1fc1ff;
   border: 1px solid #556c7c;
   background: #303844;
+  letter-spacing: 0.8px;
 }
 
 .btn-primary {
@@ -130,6 +131,7 @@ ul li {
   font-size: 20px;
   font-weight: 600;
   transition: all 0.3s ease;
+  letter-spacing: 0.8px;
 }
 
 .btn-secondary {
@@ -144,6 +146,7 @@ ul li {
   font-weight: 600;
   border: 1px solid #1fc1ff;
   transition: all 0.3s ease;
+  letter-spacing: 0.8px;
 }
 
 .btn-secondary:hover,
