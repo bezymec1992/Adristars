@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Bank</title>
+<link rel="preload" as="image" href="imgs/bank1.webp" type="image/webp" />
+  <link rel="preload" as="image" href="imgs/bank1-mb.webp" type="image/webp" />
     <link rel="stylesheet" href="styles/neoBank-style.css" />
   </head>
   <body>
@@ -91,7 +93,7 @@
     <section class="bank container">
       <picture class="bank__picture">
         <source media="(max-width:768px)" srcset="imgs/bank1-mb.webp" />
-        <img src="imgs/bank1.webp" alt="bank" width="1380" height="898" />
+        <img src="imgs/bank1.webp" alt="bank" width="1380" height="898" fetchpriority="high"/>
       </picture>
 
       <h1 class="bank__title">Overview</h1>
