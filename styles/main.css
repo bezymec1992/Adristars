@@ -37,7 +37,7 @@ main {
 
 .hero__cookies {
   position: fixed;
-  bottom: 80px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   max-width: 1382px;

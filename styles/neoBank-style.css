@@ -1,0 +1,53 @@
+@import 'fonts.css';
+@import 'resets.css';
+@import 'header.css';
+@import 'portfolio-hero.css';
+@import 'estimate.css';
+@import 'about.css';
+@import 'footer.css';
+
+.bank {
+  padding: 90px 36px;
+}
+
+.bank__title {
+  padding-top: 90px;
+  padding-bottom: 60px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.bank__picture {
+  width: 100%;
+  height: auto;
+  border-radius: 36px;
+}
+
+.bank__picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 38px;
+}
+
+@media (max-width: 768px) {
+  .bank {
+    padding: 0 16px 80px;
+  }
+
+  .bank__title {
+    font-size: 24px;
+    padding-top: 80px;
+    padding-bottom: 32px;
+  }
+
+  .bank__picture {
+    border-radius: 8px;
+  }
+
+  .bank__picture img {
+    border-radius: 8px;
+  }
+}
