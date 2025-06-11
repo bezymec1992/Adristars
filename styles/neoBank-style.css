@@ -33,6 +33,9 @@
 }
 
 @media (max-width: 768px) {
+  .gradient {
+    display: none;
+  }
   .bank {
     padding: 0 16px 80px;
   }
