@@ -32,6 +32,10 @@
   border-radius: 38px;
 }
 
+#bankImageTrigger {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .gradient {
     display: none;
@@ -74,8 +78,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60%;
-  height: auto;
+  width: 80%;
+  height: 100%;
   border-radius: 60px;
   transition: all 0.3s ease-in-out;
 }

@@ -276,16 +276,19 @@
       const trigger = document.getElementById('bankImageTrigger');
       const modal = document.getElementById('imageModal');
       const closeBtn = document.getElementById('modalClose');
+      const body = document.body;
 
       trigger.addEventListener('click', () => {
         // modal.style.display = 'block';
         modal.style.visibility = 'visible';
         modal.style.opacity = 1;
+        body.style.overflow = 'hidden'; // Отключаем прокрутку страницы
       });
 
       closeBtn.addEventListener('click', () => {
         modal.style.visibility = 'hidden';
         modal.style.opacity = 0;
+        body.style.overflow = 'visible'; // Включаем прокрутку страницы
       });
 
       // Закрытие по клику вне картинки
@@ -293,6 +296,7 @@
         if (e.target === modal) {
           modal.style.visibility = 'hidden';
           modal.style.opacity = 0;
+          body.style.overflow = 'visible'; // Включаем прокрутку страницы
         }
       });
     </script>
