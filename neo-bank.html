@@ -89,7 +89,7 @@
     </section>
 
     <section class="bank container">
-      <picture class="bank__picture" id="bankImageTrigger">
+      <picture class="bank__picture">
         <source media="(max-width:768px)" srcset="imgs/bank1-mb.webp" />
         <img src="imgs/bank1.webp" alt="bank" width="1380" height="898" />
       </picture>
@@ -113,6 +113,70 @@
       <picture class="bank__picture">
         <source media="(max-width:768px)" srcset="imgs/bank4-mb.webp" />
         <img src="imgs/bank4.webp" alt="bank" width="1380" height="1165" />
+      </picture>
+
+      <h2 class="bank__title">the process</h2>
+
+      <picture class="bank__picture">
+        <source media="(max-width:768px)" srcset="imgs/neo-bank/bank5-mb.webp" />
+        <img src="imgs/neo-bank/bank5.webp" alt="bank" width="1380" height="1165" />
+      </picture>
+
+      <h2 class="bank__title">UX Research - User Behavior in Digital Banking</h2>
+
+      <picture class="bank__picture">
+        <source media="(max-width:768px)" srcset="imgs/neo-bank/bank6-mb.webp" />
+        <img src="imgs/neo-bank/bank6.webp" alt="bank" width="1380" height="1165" />
+      </picture>
+
+      <h2 class="bank__title">Colors & Typography</h2>
+
+      <picture class="bank__picture">
+        <source media="(max-width:768px)" srcset="imgs/neo-bank/bank7-mb.webp" />
+        <img src="imgs/neo-bank/bank7.webp" alt="bank" width="1380" height="1165" />
+      </picture>
+
+      <h2 class="bank__title">App Functionality</h2>
+
+      <div class="picture-wrapper">
+        <picture class="bank__picture">
+          <source media="(max-width:768px)" srcset="imgs/neo-bank/bank8-mb.webp" />
+          <img src="imgs/neo-bank/bank8.webp" alt="bank" width="1380" height="1165" />
+        </picture>
+
+        <picture class="bank__picture">
+          <source media="(max-width:768px)" srcset="imgs/neo-bank/bank9-mb.webp" />
+          <img src="imgs/neo-bank/bank9.webp" alt="bank" width="1380" height="1165" />
+        </picture>
+
+        <picture class="bank__picture">
+          <source media="(max-width:768px)" srcset="imgs/neo-bank/bank10-mb.webp" />
+          <img src="imgs/neo-bank/bank10.webp" alt="bank" width="1380" height="1165" />
+        </picture>
+
+        <picture class="bank__picture">
+          <source media="(max-width:768px)" srcset="imgs/neo-bank/bank11-mb.webp" />
+          <img src="imgs/neo-bank/bank11.webp" alt="bank" width="1380" height="1165" />
+        </picture>
+
+        <picture class="bank__picture">
+          <source media="(max-width:768px)" srcset="imgs/neo-bank/bank12-mb.webp" />
+          <img src="imgs/neo-bank/bank12.webp" alt="bank" width="1380" height="1165" />
+        </picture>
+      </div>
+
+      <h2 class="bank__title">Outcome</h2>
+
+      <picture class="bank__picture">
+        <source media="(max-width:768px)" srcset="imgs/neo-bank/bank13-mb.webp" />
+        <img src="imgs/neo-bank/bank13.webp" alt="bank" width="1380" height="1165" />
+      </picture>
+
+      <h2 class="bank__title">Technologies</h2>
+
+      <picture class="bank__picture radius-none">
+        <source media="(max-width:768px)" srcset="imgs/neo-bank/bank14-mb.webp" />
+        <img src="imgs/neo-bank/bank14.webp" alt="bank" width="1380" height="1165" />
       </picture>
     </section>
 
@@ -262,39 +326,6 @@
       <p class="footer__bottom">© 2024. AdriStars company. All rights reserved.</p>
     </footer>
 
-    <div class="modal__bank" id="imageModal">
-      <span class="modal__close" id="modalClose">&times;</span>
-      <!-- <img class="modal__content" id="modalImg" src="imgs/bank1.webp" alt="bank enlarged" /> -->
-      <picture class="modal__content" id="modalImg">
-        <source media="(max-width:768px)" srcset="imgs/bank1-mb.webp" />
-        <img src="imgs/bank1.webp" alt="bank" width="1380" height="898" />
-      </picture>
-    </div>
-
     <script src="header.js"></script>
-    <script>
-      const trigger = document.getElementById('bankImageTrigger');
-      const modal = document.getElementById('imageModal');
-      const closeBtn = document.getElementById('modalClose');
-      const body = document.body;
-
-      trigger.addEventListener('click', () => {
-        modal.style.display = 'block';
-        body.style.overflow = 'hidden'; // Отключаем прокрутку страницы
-      });
-
-      closeBtn.addEventListener('click', () => {
-        modal.style.display = 'none';
-        body.style.overflow = 'visible'; // Включаем прокрутку страницы
-      });
-
-      // Закрытие по клику вне картинки
-      modal.addEventListener('click', e => {
-        if (e.target === modal) {
-          modal.style.display = 'none';
-          body.style.overflow = 'visible'; // Включаем прокрутку страницы
-        }
-      });
-    </script>
   </body>
 </html>
