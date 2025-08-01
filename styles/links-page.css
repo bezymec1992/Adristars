@@ -84,6 +84,7 @@ main {
   box-shadow: 0px 4px 16px 0px rgba(179, 195, 201, 0.16);
   transition: all 0.3s;
   z-index: 11;
+  position: relative;
 }
 
 .hero__link:hover {
@@ -92,10 +93,33 @@ main {
     0px 4px 24px 0px rgba(31, 193, 255, 0.7),
     0px 4px 16px 0px rgba(179, 195, 201, 0.16);
   border: 2px solid #0078bc;
+  background-color: white;
+}
+
+.hero__link::after {
+  transition: all 0.3s;
+  content: '';
+  position: absolute;
+  right: 62px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  background-image: url('/imgs/icon-right.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hero__link:hover::after {
+  opacity: 1;
+  visibility: visible;
+  right: 32px;
 }
 
 .hero__link:hover .hero__link-text {
-  color: #1a9fd3;
+  color: #21bcff;
 }
 
 .hero__link-main {
@@ -155,6 +179,19 @@ main {
 .hero__logo {
   width: 86px;
   height: 101px;
+}
+
+.separator {
+  position: relative;
+  height: 1px;
+  margin: 10px 0;
+  background-image: repeating-linear-gradient(
+    to right,
+    #556c7c,
+    #556c7c 8px,
+    transparent 8px,
+    transparent 16px
+  );
 }
 
 @media (max-width: 1200px) {
